@@ -14,7 +14,7 @@ import requests
 from flask import Flask, Response, abort, jsonify, redirect, render_template_string, request, session, url_for, flash
 
 APP_NAME = "XITEXE KEY VERIFICATION"
-PUBLIC_BASE_URL = os.getenv("PUBLIC_BASE_URL", "https://xitexekey.duckdns.org").rstrip("/")
+PUBLIC_BASE_URL = os.getenv("PUBLIC_BASE_URL", "https://xitexekey-production.up.railway.app").rstrip("/")
 DATABASE = os.getenv("DATABASE_PATH", os.path.join(os.path.dirname(__file__), "xitexe.sqlite3"))
 ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD", "xit")
 VPLINK_TOKEN = os.getenv("VPLINK_TOKEN", "6feb48cdd4034b0c323bc1c1353561921c708592")
